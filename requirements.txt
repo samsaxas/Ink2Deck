@@ -34,3 +34,22 @@ requests==2.31.0
 
 # Streamlit extensions (optional)
 streamlit-embedcode==0.1.2
+
+# Core
+streamlit==1.32.2
+pymongo==4.6.1
+python-dotenv==1.0.0
+
+# Image Processing (updated versions for Python 3.12)
+pillow==10.1.0
+opencv-python-headless==4.9.0.80
+numpy>=1.26.0  # Required by opencv-python-headless
+scipy==1.10.1
+scikit-image==0.22.0
+
+# Google Generative AI (missing in your original)
+google-generativeai>=0.3.0
+
+# Other utilities (trimmed to essentials)
+pandas==2.0.3
+requests==2.31.0
