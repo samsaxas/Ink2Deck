@@ -1,0 +1,36 @@
+# Core requirements
+streamlit==1.32.2
+pymongo==4.6.1
+python-dotenv==1.0.0
+
+# Image processing
+pillow==10.1.0
+opencv-python-headless==4.9.0.80
+numpy==1.24.4
+scipy==1.10.1
+scikit-image==0.22.0
+imgaug==0.4.0
+
+# OCR Engines
+pytesseract==0.3.10
+easyocr==1.7.1
+keras-ocr==0.9.3  # Updated to latest available
+
+# Document generation
+python-pptx==0.6.23
+fpdf2==2.7.7
+pypdfium2==4.30.1
+
+# Deep learning (use either TensorFlow or PyTorch, not both)
+tensorflow==2.15.0
+keras==2.15.0  # Match TensorFlow version
+# torch==2.0.1  # Uncomment if using PyTorch instead
+# torchvision==0.15.2
+
+# Utilities
+pandas==2.0.3
+matplotlib==3.7.2
+requests==2.31.0
+
+# Streamlit extensions (optional)
+streamlit-embedcode==0.1.2
