@@ -1,0 +1,1 @@
+# No system OCR packages required. Gemini API is the only text extraction engine.

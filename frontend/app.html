@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Workspace | Ink2Deck</title>
+  <meta name="theme-color" content="#000000">
+  <link rel="icon" href="/static/assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="logo" href="/" aria-label="Ink2Deck home">Ink2<span>Deck</span></a>
+      <nav class="nav" aria-label="Account">
+        <span class="whoami">Signed in as <strong id="whoami"></strong></span>
+        <button type="button" class="btn btn-outline btn-sm" id="logout-btn">Log out</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="work" id="main">
+    <div class="wrap">
+      <h1>Turn a photo into a deck</h1>
+      <p class="lead">Upload a photo of a whiteboard or handwritten notes. Check the text, then download a PowerPoint or a PDF.</p>
+
+      <div class="alert alert-error page-alert" id="page-error" role="alert" hidden></div>
+
+      <!-- Step 1: choose a photo -->
+      <section class="dropzone" id="dropzone" aria-label="Upload an image">
+        <svg class="dz-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M4 16.5V18a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-1.5"/>
+          <path d="M12 15V4"/>
+          <path d="m7.5 8.5 4.5-4.5 4.5 4.5"/>
+        </svg>
+        <p class="dz-title">Drag a photo here</p>
+        <p class="dz-sub">JPG, PNG or WebP, up to 10 MB. You can also paste an image.</p>
+        <button type="button" class="btn btn-primary btn-lg" id="choose-btn">Choose image</button>
+        <input type="file" id="file-input" accept="image/png,image/jpeg,image/webp" hidden>
+      </section>
+
+      <!-- Step 2: extract, edit, export -->
+      <section class="editor" id="editor" hidden>
+        <div class="panel">
+          <div class="panel-head"><h2>Your photo</h2></div>
+          <img class="preview" id="preview" alt="Preview of the uploaded photo">
+          <p class="file-meta" id="file-meta"></p>
+          <div class="btn-row">
+            <button type="button" class="btn btn-primary" id="extract-btn">
+              <span class="spinner" aria-hidden="true"></span><span class="label">Extract text</span>
+            </button>
+            <button type="button" class="btn btn-outline" id="change-btn">Choose a different image</button>
+          </div>
+        </div>
+
+        <div class="panel">
+          <div class="panel-head">
+            <h2>Extracted text</h2>
+            <span class="badge" id="engine-badge" hidden></span>
+          </div>
+
+          <div class="empty-text" id="empty-text">Select Extract text. The result appears here and you can edit it before downloading.</div>
+          <div class="skeleton" id="skeleton" aria-hidden="true" hidden>
+            <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+          </div>
+          <label class="visually-hidden" for="text-area">Extracted text</label>
+          <textarea class="text-area" id="text-area" spellcheck="false" hidden></textarea>
+          <p class="count" id="count" hidden></p>
+
+          <div class="stack" id="warnings" hidden></div>
+
+          <div class="btn-row">
+            <button type="button" class="btn btn-primary" id="pptx-btn" disabled>
+              <span class="spinner" aria-hidden="true"></span><span class="label">Download PowerPoint</span>
+            </button>
+            <button type="button" class="btn btn-outline" id="pdf-btn" disabled>
+              <span class="spinner" aria-hidden="true"></span><span class="label">Download PDF</span>
+            </button>
+            <button type="button" class="btn btn-outline" id="copy-btn" disabled>Copy text</button>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <div class="toasts" id="toasts" aria-live="polite"></div>
+  <script src="/static/js/common.js"></script>
+  <script src="/static/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Log in or sign up | Ink2Deck</title>
+  <meta name="theme-color" content="#000000">
+  <link rel="icon" href="/static/assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body class="auth-body">
+  <div class="auth-shell">
+    <div class="auth-top">
+      <a class="logo" href="/" aria-label="Ink2Deck home">Ink2<span>Deck</span></a>
+      <a class="btn btn-outline btn-sm" href="/">Back to home</a>
+    </div>
+
+    <main class="auth-card" id="main">
+      <div class="seg" role="tablist" aria-label="Account">
+        <button type="button" role="tab" id="tab-login" aria-selected="true" aria-controls="panel-login">Log in</button>
+        <button type="button" role="tab" id="tab-signup" aria-selected="false" aria-controls="panel-signup" tabindex="-1">Sign up</button>
+      </div>
+
+      <section id="panel-login" role="tabpanel" aria-labelledby="tab-login">
+        <h1>Welcome back</h1>
+        <p class="sub">Log in to turn your next photo into a deck.</p>
+        <form class="form" id="login-form" novalidate>
+          <div class="alert alert-error" id="login-error" role="alert" hidden></div>
+          <div class="field">
+            <label for="login-username">Username</label>
+            <input type="text" id="login-username" name="username" autocomplete="username" autocapitalize="none" spellcheck="false" placeholder="Your username" required>
+          </div>
+          <div class="field">
+            <label for="login-password">Password</label>
+            <div class="pw">
+              <input type="password" id="login-password" name="password" autocomplete="current-password" placeholder="Your password" required>
+              <button type="button" class="pw-toggle" data-toggle="login-password" aria-controls="login-password" aria-pressed="false">Show</button>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary btn-lg btn-block" id="login-submit">
+            <span class="spinner" aria-hidden="true"></span><span class="label">Log in</span>
+          </button>
+        </form>
+      </section>
+
+      <section id="panel-signup" role="tabpanel" aria-labelledby="tab-signup" hidden>
+        <h1>Create your account</h1>
+        <p class="sub">It takes a minute. You will go straight to the upload page.</p>
+        <form class="form" id="signup-form" novalidate>
+          <div class="alert alert-error" id="signup-error" role="alert" hidden></div>
+          <div class="field">
+            <label for="signup-name">Full name</label>
+            <input type="text" id="signup-name" name="name" autocomplete="name" placeholder="Your full name" required>
+          </div>
+          <div class="field">
+            <label for="signup-email">Email</label>
+            <input type="email" id="signup-email" name="email" autocomplete="email" placeholder="you@example.com" required>
+          </div>
+          <div class="field">
+            <label for="signup-username">Username</label>
+            <input type="text" id="signup-username" name="username" autocomplete="username" autocapitalize="none" spellcheck="false" placeholder="Choose a username" aria-describedby="username-hint" required>
+            <p class="hint" id="username-hint">3 to 32 characters: letters, numbers, dot, dash or underscore.</p>
+          </div>
+          <div class="field">
+            <label for="signup-password">Password</label>
+            <div class="pw">
+              <input type="password" id="signup-password" name="password" autocomplete="new-password" placeholder="At least 8 characters" aria-describedby="password-hint" required>
+              <button type="button" class="pw-toggle" data-toggle="signup-password" aria-controls="signup-password" aria-pressed="false">Show</button>
+            </div>
+            <p class="hint" id="password-hint">Use at least 8 characters.</p>
+          </div>
+          <label class="check">
+            <input type="checkbox" id="signup-terms" name="accept_terms">
+            <span>I agree to the Terms and Conditions</span>
+          </label>
+          <button type="submit" class="btn btn-primary btn-lg btn-block" id="signup-submit">
+            <span class="spinner" aria-hidden="true"></span><span class="label">Create account</span>
+          </button>
+        </form>
+      </section>
+    </main>
+  </div>
+
+  <div class="toasts" id="toasts" aria-live="polite"></div>
+  <script src="/static/js/common.js"></script>
+  <script src="/static/js/login.js"></script>
+</body>
+</html>

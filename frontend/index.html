@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ink2Deck: turn whiteboard photos into slides</title>
+  <meta name="description" content="Upload a photo of a whiteboard or handwritten notes. Ink2Deck reads the text and builds an editable PowerPoint and a PDF.">
+  <meta name="theme-color" content="#000000">
+  <link rel="icon" href="/static/assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="logo" href="/" aria-label="Ink2Deck home">Ink2<span>Deck</span></a>
+      <nav class="nav" aria-label="Main">
+        <a class="nav-link" href="#how">How it works</a>
+        <a class="btn btn-outline btn-sm" href="/login" data-login>Log in</a>
+        <a class="btn btn-primary btn-sm" href="/login?tab=signup" data-start>Get started</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="wrap">
+        <div>
+          <h1>Photograph the board. Get the deck.</h1>
+          <p class="hero-lead">Ink2Deck reads the handwriting and equations in a photo of a whiteboard or notebook page, then turns the text into an editable PowerPoint and a PDF.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary btn-lg" href="/login?tab=signup" data-start>Get started</a>
+            <a class="btn btn-outline btn-lg" href="#how">See how it works</a>
+          </div>
+          <p class="hero-note">Accepts JPG, PNG and WebP photos up to 10 MB.</p>
+        </div>
+        <div class="hero-art">
+          <img src="/static/assets/hero.jpg" width="1024" height="1024" alt="Ink2Deck logo: a slide window with document and image icons">
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="how">
+      <div class="wrap">
+        <h2>How it works</h2>
+        <ol class="steps">
+          <li>
+            <span class="step-num" aria-hidden="true">1</span>
+            <h3>Upload a photo</h3>
+            <p>Drop in a picture of a whiteboard, a notebook page or handwritten notes.</p>
+          </li>
+          <li>
+            <span class="step-num" aria-hidden="true">2</span>
+            <h3>Check the text</h3>
+            <p>Ink2Deck reads the writing. Fix any mistakes in the editor before you export.</p>
+          </li>
+          <li>
+            <span class="step-num" aria-hidden="true">3</span>
+            <h3>Download</h3>
+            <p>Get a PowerPoint with one slide per paragraph, or a PDF of the text.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section" id="features">
+      <div class="wrap">
+        <h2>What you get</h2>
+        <dl class="facts">
+          <div>
+            <dt>Handwriting and equations</dt>
+            <dd>Text is read from your original photo with Gemini vision, including equations and non-English writing.</dd>
+          </div>
+          <div>
+            <dt>Edit before you export</dt>
+            <dd>Correct the extracted text first. Your edits go into the PowerPoint and the PDF.</dd>
+          </div>
+          <div>
+            <dt>A deck that keeps your photo</dt>
+            <dd>The PowerPoint opens with a title slide, then your original photo, then one slide for each paragraph.</dd>
+          </div>
+          <div>
+            <dt>A fallback reader</dt>
+            <dd>If the handwriting reader is unavailable, Ink2Deck switches to Tesseract, which is best on printed text.</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="cta-band">
+      <div class="wrap">
+        <h2>Try it on your next whiteboard</h2>
+        <a class="btn btn-primary btn-lg" href="/login?tab=signup" data-start>Create an account</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>Ink2Deck</span>
+      <a href="https://github.com/samsaxas/Ink2Deck" rel="noopener">Source on GitHub</a>
+    </div>
+  </footer>
+
+  <script src="/static/js/common.js"></script>
+</body>
+</html>
