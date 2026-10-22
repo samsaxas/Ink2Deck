@@ -223,5 +223,3 @@ The evaluator reports character error rate (CER) and word error rate (WER). Meas
 - Deploy a public demo.
 
 ## License
-
-Add the project's chosen license before distributing or reusing the code.
