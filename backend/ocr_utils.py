@@ -12,7 +12,7 @@ from PIL import Image
 from pptx import Presentation
 from pptx.util import Inches, Pt
 
-GEMINI_MODEL = os.getenv("GEMINI_MODEL", "gemini-2.5-flash")
+GEMINI_MODEL = os.getenv("GEMINI_MODEL", "gemini-3.5-flash-lite")
 GEMINI_PROMPT = (
     "Read this whiteboard or handwritten-notes image. Transcribe all visible "
     "text as accurately as possible, preserving headings, bullets, equations, "

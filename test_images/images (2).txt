@@ -1,0 +1,99 @@
+Control of gene expression:
+• DNA modifications:
+- methylation + acetylation
+- genomic imprinting
+- Epigenetics: modification to
+DNA or histones, does not effect bases
+• Regulation of transcription
+- operon (bacteria)
+- transcription factors + promoters
+- enhancers + activators / repressors
+• Post-transcriptional regulation
+- introns + exons (spliceosome)
+- protein targeting
+- RNAi
+• Post-translational regulation
+- cytoplasmic determinants
+- rought ER + Golgi
+- feedback inhibition
+- phosphorylation
+- proteasome (ubiquitin dead cats (kins))
+
+RNA interference:
+* double stranded RNA acts as
+signal for cells to destruct a matched
+RNA sequence
+* cells use as defence mechanism against
+virus
+* DICER processes double stranded RNA into
+micro-RNA
+* RISC works with micro RNA to bind to RNA +
+chop it up, silencing a gene
+
+recombinant
+DNA:
+• ligase + restriction
+enzymes used to make
+recombinant DNA
+• reverse transcriptase used
+to make CDNA
+• cDNA made when cloning
+human genes b/c bacteria
+cannot cut out introns, by
+carying mRNA into cDNA, you
+create a gene with no introns
+• gel electrophoresis:
+- smallest fragments
+move furthest
+
+discovery of eyeless gene:
+- eyeless gene discovered in fruit
+flies, a mouse's eyeless gene was
+put into a fruit fly, resulting in normal
+mut fly eyes this reveals that
+the genetic code is UNIVERSAL
+
+PCR:
+1 denaturation DNA
+2 anneal: primers bind to target DNA
+3 replication: taq polymerase decreases
+strand
+
+Purpose of PCR: to make
+many copies (amplify) target DNA
+• primers: starting point of DNA
+synthesis
+• taq polymerase can function at
+extremely high temperatures
+
+genetics of bacteria:
+• transformation:
+bacteria uptakes plasmid or DNA from
+another cell. the DNA is then integrated into
+the genome through recombination.
+
+• conjugation:
+ONE way transfer of DNA through a sex
+Pilus. the donor cell contains an F plasmid
+(fertility gene)
+
+• transduction: Phages carry genes from one host cell to
+another. recombination may occur
+↓ lytic cycle ↓ lysogenic cycle
+how does antibiotic
+resistance spread quickly
+in a population? Conjugation,
+b/c a plasmid w/ resistance DNA
+is transferred
+in the lysogenic cycle,
+the DNA is incorporated
+into the genome.
+
+transformation in labs:
+- scientists use ligase and restriction enzymes to get a
+human gene into a plasmid by "cutting" and "pasting" it
+- scientists isolate transformed bacteria from non- transformed
+because transformed bacteria will create colonies on ampicillin
+- if a human gene is inserted into the middle of an ampicillin
+gene, bacteria w/ plasmid will not grow in ampicillin b/c
+human gene is blocking it

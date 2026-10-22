@@ -1,0 +1,50 @@
+How Does Google Handle CSS + Javascript "Hidden" Text?
+
+A
+Coconut marble furnishings are
+made from the roots of coconut
+trees, blended in a giant vat
+with crawfish pearls and an
+isotope of Einsteinium. The
+resulting hardwood-like material
+creates beautiful shine and hard- [unclear]
+
+B
+Coconut marble furnishings are
+made from the roots...
+>> Read More
+
+Best Practices for SEO and
+"hidden" text:
+------------------------------
+1) Expect hidden text to receive
+less ranking influence. Make the
+trade-off only if the value outweighs
+the lost rankings/traffic.
+
+2) Consider if an overlay or less-
+interfering UI element could
+achieve the same goals.
+
+3) If you must use "read more" or other
+text-hiding elements, place crucial info,
+keywords, and content in the default-
+visible portions of text
+
+All other things being equal:
+----------------------------
+→ A will outrank B for
+"coconut marble furnishings"
+
+→ The content hidden behind the
+"read more" button, whether
+CSS-based or Javascript, will
+be weighted less by Google
+
+→ Bing + Yahoo! appear not to
+discern between hidden vs.
+non-hidden text
+
+Special Thanks to: Shai Aharony
+Rebootonline.com
+Reboot Online
