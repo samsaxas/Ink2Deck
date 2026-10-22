@@ -6,7 +6,8 @@ Ink2Deck reads handwriting, notes, and equations from an image using Gemini Visi
 
 ## Project links
 - **Github Repository:** [https://github.com/samsaxas/Ink2Deck](https://github.com/samsaxas/Ink2Deck)
-- **Local application:** [http://127.0.0.1:8000](http://127.0.0.1:8000) (available when running locally)
+- **Local application:** [http://127.0.0.1:8000](http://127.0.0.1:8000)
+- **Link:** [Ink2Deck](http://localhost:8001/)
 
 > The screenshots show the application running locally. A public live-demo link has not been provided.
 
